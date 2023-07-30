@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserResource {
 
     @GetMapping
-    public ResponseEntity<User> finall() {
+    public ResponseEntity<User> findall() {
         User u = new User(1L, "Eliel", "eliel@gmail.com", "7998844885", "12343564");
         return ResponseEntity.ok().body(u);
     }
